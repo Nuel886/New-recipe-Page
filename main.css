@@ -2,11 +2,12 @@ body{
    background-color:  #f0f2f5;
 }
 h1 {
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   border: 15px solid black;
+   font-family: 'Trebuchet MS', sans-serif;
+   border: 1px solid #ddd;
    background: white;
-   border-radius: 20px;
-   text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff;
+   border-radius: 10px;
+   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+   text-shadow: none;
    padding: 15px 20px;
    display: inline-block;
 }
@@ -18,12 +19,20 @@ div p{
 }
      
 figure {
-   margin: 1em 0; 
+   margin: 2em auto;
    padding: 10px;
-   background-color: #f9f9f9;
-   border: 1px solid #ddd;
+   background-color: white; 
+   border: 1px solid #eee;
    text-align: center;
- }
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+figure img {
+   max-width: 100%;
+   border-radius: 4px;
+   margin-bottom: 10px;
+}
 
  figcaption{
    font-style: oblique;
@@ -31,80 +40,30 @@ figure {
    color: red;
  }
 
- figure img{
-   margin: 30px;
- }
-
- h2{
-   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   border-bottom: 5px solid gray;
+ h2, h3, h4 {
+   font-family: 'Trebuchet MS', sans-serif;
+   border-bottom: 2px solid #ccc;
    display: inline-block;
    padding-bottom: 5px;
-   border-radius: 15px;
    font-weight: bold;
- }
+   border-radius: 0;
+   margin-bottom: 15px;
+}
 
-.recipe-info{
-   background-color: gray;
+ .recipe-info, .ingredients, .instructions, #nutrition {
+   background-color: #e0e0e0;
    padding: 30px;
    border-radius: 30px;
 }
 
-.recipe-info li{
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   margin:0 0 10px 0px;
+.recipe-info li, .ingredients li, .instructions li, #nutrition li {
+   font-family: Cambria, Georgia, serif;
+   margin-bottom: 10px; /* Consistent spacing */
    color: black;
    padding: 5px;
-   font-weight: bold;
+   font-weight: normal; /* Normal font weight for body text */
 }
 
-.ingredients{
-   background-color: grey;
-   padding: 30px;
-   border-radius: 30px;
-}
-
-.ingredients li{
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   margin:0 0 10px 0px;
-   color: black;
-   padding: 5px;
-   font-weight: bold;
-}
-
-.instructions{
-   background-color: grey;
-   padding: 30px;
-   border-radius: 30px;
-}
-
-.instructions li{
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   margin:0 0 10px 0px;
-   color: black;
-   padding: 5px;
-   font-weight: bold;
-}
-
-.cooking{
-   text-align: center;
-   margin: 1em 0; 
-   padding: 10px;
-   background-color: #f9f9f9;
-   border: 1px solid #ddd;
-}
-.cooking img{
-   margin: 30px;
-}
-
-h3{
-   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   border-bottom: 5px solid gray;
-   display: inline-block;
-   padding-bottom: 5px;
-   border-radius: 15px;
-   font-weight: bold;
-}
 
 #note{
    font-size: medium;
@@ -112,33 +71,17 @@ h3{
    font-weight: bold;
 }
 
-h4{
-   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   border-bottom: 5px solid gray;
-   display: inline-block;
-   padding-bottom: 5px;
-   border-radius: 15px;
-   font-weight: bold;
-}
-#nutrition{
-   background-color: grey;
-   padding: 30px;
-   border-radius: 30px;
-}
-
-#nutrition li{
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   margin:0 0 10px 0px;
-   color: black;
-   padding: 5px;
-   font-weight: bold;
-}
 .cite p{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    font-weight: bold;
 }
 
-#link a{
-   color: darkred;
-   text-decoration: underline;
+#link a {
+   color: #b30000; 
+   text-decoration: none;
+   transition: color 0.3s ease;
+}
+
+#link a:hover {
+   color: green;
 }
